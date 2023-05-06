@@ -1,0 +1,86 @@
+@media (max-width: 768px) {
+
+    /* ------------ header-style ------------- */
+    .header {
+        height: 80px;
+        background: #394867;
+
+        .navbar {
+            position: relative;
+
+            .logo {
+                display: flex;
+                flex-direction: column;
+                gap: 0;
+
+                a {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #fff;
+                }
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                gap: 30px;
+                flex-direction: column;
+                background: #394867;
+                padding: 30px 15px;
+            }
+
+            .hamburger {
+                cursor: pointer;
+                display: block;
+
+                .line {
+                    width: 35px;
+                    height: 3px;
+                    margin: 6px;
+                    background: #fff;
+                }
+            }
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .hamburger.active .line:nth-child(2) {
+            background: transparent;
+        }
+
+        .hamburger.active .line:nth-child(1) {
+            transform: translateY(9px) rotate(225deg);
+        }
+
+        .hamburger.active .line:nth-child(3) {
+            transform: translateY(-9px) rotate(-225deg);
+        }
+    }
+
+    /* ------------ /header-style ------------- */
+
+    /* ------------ product-style ------------- */
+    .product {
+        .product-box {
+            .product-container {
+                position: relative;
+
+                .product-items {
+                    grid-template-columns: repeat(1, 1fr);
+                    grid-gap: 0;
+                    padding-bottom: 50px;
+                    .item-right{
+                        justify-self: center;
+                    }
+                }
+            }
+        }
+    }
+
+    /* ------------ /product-style ------------- */
+}
