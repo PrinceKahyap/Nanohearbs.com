@@ -266,12 +266,102 @@
     }
 
     .product {
-        width: 100%;
-        height: auto;
-
         .product-container {
-            background: #f9f6f0;
+            .product-boxs {
+                .product-items {
+                    .product-left {
+                        .product-title {
+                            h3 {
+                                font-size: 3rem;
+                            }
+    
+                            p {
+                                padding-top: 10px;
+                                font-size: 2rem;
+    
+                                &:nth-child(3) {
+                                    padding-top: 20px;
+                                    font-weight: 600;
+                                    line-height: 1.6;
+                                    font-size: 2.2rem;
+                                    padding-bottom: 20px;
+                                }
+                            }
+    
+                            span {
+                                padding-top: 20px;
+                                font-size: 2rem;
+                                font-weight: 700;
+                                color: #4b0316;
+                            }
+                        }
+    
+                        .product-info {
+                            padding-top: 30px;
+    
+                            h3 {
+                                font-size: 2.5rem;
+                                font-weight: 500;
+                                color: #4b0316;
+                            }
+    
+                            p {
+                                padding-top: 20px;
+                                font-size: 1.5rem;
+                                line-height: 1.5;
+                            }
+                        }
+    
+                        .product-content {
+                            padding-top: 30px;
+    
+                            h3 {
+                                font-size: 2.5rem;
+                                font-weight: 500;
+                                color: #4b0316;
+                            }
+    
+                            ul {
+                                display: flex;
+                                flex-direction: column;
+                                padding-top: 20px;
+    
+                                li {
+                                    padding-bottom: 15px;
+    
+                                    p {
+                                        font-size: 1.5rem;
+    
+                                    }
+                                }
+                            }
+                        }
+    
+                        .productLeft-img {
+                            width: 100%;
+                            height: auto;
+                            padding-top: 20px;
+                        }
+                    }
+    
+                    .product-right {
+                        padding-top: 100px;
+    
+                        img {
+                            border-radius: 50%;
+                            width: 100%;
+                            height: 100%;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
 
+    footer{
+        p{
+            font-size: 1.4rem;
         }
     }
 }
