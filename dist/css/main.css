@@ -47,6 +47,21 @@ img {
   color: #464b03;
 }
 
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000000;
+  background: white;
+}
+#loader img {
+  width: 50px;
+  height: 50px;
+}
+
 /* ---------- /Global-classes ------------ */
 /* ------------- header-style ---------------- */
 .header {
@@ -142,6 +157,7 @@ header.sticky .navbar .nav-menu a {
 .about {
   width: 100%;
   height: auto;
+  padding-top: 50px;
 }
 .about .about-container {
   display: flex;
@@ -171,6 +187,7 @@ header.sticky .navbar .nav-menu a {
 .product {
   width: 100%;
   height: auto;
+  padding-top: 50px;
 }
 .product .product-container {
   background: #f9f6f0;
@@ -267,13 +284,29 @@ header.sticky .navbar .nav-menu a {
 .testimonial {
   width: 100%;
   height: auto;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .testimonial .testimonial-container {
-  height: 400px;
+  height: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(/dist/img/cd01c92e60614337bece2f3626b9be21.jpg);
   background-size: cover;
   background-position: center;
+}
+.testimonial .testimonial-container .carousel {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 30px;
+}
+.testimonial .testimonial-container .carousel .card p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.5;
 }
 
 /* ------------- /Testimonial-style ---------------- */
@@ -592,6 +625,42 @@ footer p {
     border-radius: 50%;
     width: 100%;
     height: 100%;
+  }
+  .testimonial {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .testimonial .testimonial-container {
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(/dist/img/cd01c92e60614337bece2f3626b9be21.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  .testimonial .testimonial-container .carousel {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+  }
+  .testimonial .testimonial-container .carousel .card p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .contact .contact-container .contact-left .contact-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact .contact-container .contact-left .contact-title h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  .contact .contact-container .contact-left .contact-info ul li {
+    font-size: 1.5rem;
   }
   footer p {
     font-size: 1.4rem;

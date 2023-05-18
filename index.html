@@ -11,7 +11,14 @@
     <title>Nanoherbs.com</title>
 </head>
 
-<body>
+<body onload="myLoader()">
+
+    <!-- --------- preloader ---------- -->
+    <div id="loader">
+        <img src="/dist/img/Spinner-2.gif" alt="preloader">
+    </div>
+    <!-- --------- /preloader ---------- -->
+
     <!-- @@@@@@@@@@@@@@@ -Header-section- @@@@@@@@@@@@@@@ -->
     <header class="header">
         <nav class="navbar wrapper">
@@ -19,10 +26,11 @@
                 <a href="#">Nanoherbs</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#product" class="nav-link">Products</a></li>
+                <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -37,7 +45,7 @@
     <main>
 
         <!-- Hero-section  -->
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-container wrapper">
                 <h1>Nanoherbs your partner in achieving optimal healh and wellness </h1>
             </div>
@@ -46,7 +54,7 @@
         <!-- /Hero-section  -->
 
         <!-- About-section  -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="title wrapper">
                 <h2>Experience <span>Purity</span>, <span>Quality</span> & <span>Honesty</span></h2>
             </div>
@@ -81,7 +89,7 @@
         <!-- /About-section  -->
 
         <!-- Product-section  -->
-        <section class="product">
+        <section class="product" id="product">
             <div class="title wrapper">
                 <h2>Explore <span>OUR PRODUCTS</span></h2>
             </div>
@@ -457,14 +465,39 @@
         <!-- /Product-section  -->
 
         <!-- Testimonial-section  -->
-        <section class="testimonial">
+        <section class="testimonial" id="testimonial">
             <div class="title wrapper">
                 <h2>TESTIM<span>O</span>NIALS</h2>
             </div>
             <div class="testimonial-container">
-                <div class="carousel owl-carousel">
+                <div class="carousel owl-carousel wrapper">
                     <div class="card">
-                        <img src="https://picsum.photos/500/500" alt="">
+                        <p>
+                            "Good quality soaps" - Ramalakshmi, Guntur, <br> Andhra Pradesh</p>
+                    </div>
+                    <div class="card">
+                        <p>
+                            "Nanoherbs soap experience is great. Soap has very good senseorials, smooth texture. Good palatablity with skin. Excellent experience. Optimum froth along with natural herbal remedies makes it a unique product" - Dr. Mukesh Garg, Benguluru</p>
+                    </div>
+                    <div class="card">
+                        <p>
+                            "Nice bathing experience" <br> - Vishal, Mumbai</p>
+                    </div>
+                    <div class="card">
+                        <p>
+                            "High quality products. <br> Satisfied". - Durga Prasad, <br> Hyderabad</p>
+                    </div>
+                    <div class="card">
+                        <p>
+                            "Badiya sabun hai. Acha laga" <br> - B L Meena, Pratapgarh, <br> Rajasthan</p>
+                    </div>
+                    <div class="card">
+                        <p>
+                            "Awesome products. Will buy again" <br> - Varul Sachan, Patiala, Punjab</p>
+                    </div>
+                    <div class="card">
+                        <p>
+                            "Good products. Give refreshing feeling" <br> - Swarnalatha, Vijayawada, Andhra Pradesh</p>
                     </div>
                 </div>
             </div>
@@ -472,7 +505,7 @@
         <!-- /Testimonial-section  -->
 
         <!-- Contact-section  -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact-container wrapper">
                 <div class="contact-left">
                     <div class="contact-title">
