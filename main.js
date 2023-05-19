@@ -15,10 +15,11 @@ function closeMenu() {
     navMenu.classList.remove("active");
 };
 
-
+// current-year 
 const year = document.querySelector(".current-year")
 year.innerHTML = new Date().getFullYear();
 
+// Sticky-navbar 
 window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     header.classList.toggle("sticky",window.scrollY > 100);
